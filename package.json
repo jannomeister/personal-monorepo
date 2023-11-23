@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "turbo": "^1.10.16"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "format": "prettier --write \"**/**/src/**/*.{ts,tsx,js,jsx}",
+    "lint": "turbo run lint"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
